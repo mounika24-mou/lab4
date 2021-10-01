@@ -1,0 +1,448 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+      #ex{
+        border: 2px solid black;
+      padding: 25px;
+      background: url("");
+      background-repeat: repeat;
+      background-repeat:no-repeat;
+      background-size:cover;
+      }
+      #ex1{
+        border: 2px solid black;
+      padding: 25px;
+      background: url("");
+      background-repeat: repeat;
+      background-repeat:no-repeat;
+      background-size:cover;
+      }
+    </style>
+  </head>
+  <body class=" row bg-info  container-fluid " id="ex">
+   
+    <div class="row container-fluid "  style="background-image: url(); ">
+ 
+    
+      <div class="row  ml-5 mt-5 mb-5 border border-dark shadow shadow-lg p-lg-5 position-static bg-light  " id="ex1" style="background-image: url(./image/bg.jpeg);"  >
+          <div class="col-md-6 p-lg-2">
+          
+              <p class="ml-5 mt-4 text-center text-dark font-weight-bold">NAME</p>
+          </div>
+          <div class="col-md-3">
+              <form action="">
+                  <div class="">
+                    <input type="" class="form-control form-control-sm mt-4" id="get1" placeholder="">
+                  </div>
+                </form>
+          </div>
+          <div class="col-md-6 p-lg-2">
+          
+            <p class="ml-5 text-center text-dark font-weight-bold  ">ROLL NO</p>
+          </div>
+          <div class="col-md-3">
+              <form action="">
+                  <div class="">
+                    <input type="" class=" form-control form-control-sm" id="get2" placeholder="">
+                  </div>
+                </form>
+        </div>
+        <div class="col-md-6 p-lg-2">
+          
+          <p class="ml-5 text-center text-dark font-weight-bold ">DEPARTMENT</p>
+        </div>
+        <div class="col-md-3">
+            <form action="">
+                <div class="">
+                  <input type="" class=" form-control form-control-sm" id="get3" placeholder="">
+                </div>
+              </form>
+      </div>
+      <br>
+      <br>
+     
+         
+          <div class="col-md-6">
+            <p class="ml-5 text-center text-dark font-weight-bold">SEMESTER</p>
+          </div>
+          <div class="col-md-3">
+            <form action="">
+                <div class="form-group">
+                    <select name="course" id="course" class="form-control form-control-sm" onchange="sem()" required>
+                        <option value="">Choose the semester to get your CGPA</option>
+                        <option value="1">upto 1st sem</option>
+                        <option value="2">upto 2nd sem</option>
+                        <option value="3">upto 3rd sem</option>
+                        <option value="4">upto 4th sem</option>
+                        <option value="5">upto 5th sem</option>
+                        <option value="6">upto 6th sem</option>
+                        <option value="7">upto 7th sem</option>
+                        <option value="8">upto 8th sem</option>
+                    </select>
+                </div>
+            </form>
+          </div>
+          <div class="col-md-6" id="sem1">
+            <p class="ml-5 text-dark  text-center  text-white font-weight-bold"> 1st SEM GPA</p>
+          </div>
+          <div class="col-md-3" id="getsem1" >
+            <form action="">
+              <div class="">
+                <input type="" class="form-control form-control-sm" id="sem11" value="" placeholder="">
+              </div>
+            </form>
+          </div>
+          <div class="col-md-6" id="sem2">
+            <p class="ml-5 text-center text-dark font-weight-bold">2nd SEM GPA </p>
+          </div>
+          <div class="col-md-3" id="getsem2">
+            <form action="">
+              <div class="">
+                <input type="" class=" form-control form-control-sm"value="" id="sem22" placeholder="">
+              </div>
+            </form>
+          </div>
+          <div class="col-md-6" id="sem3">
+            <p class="ml-5 text-center text-dark font-weight-bold">3rd SEM GPA</p>
+          </div>
+          <div class="col-md-3" id="getsem3">
+            <form action="">
+              <div class="">
+                <input type="" class=" form-control form-control-sm" value="" id="sem33" placeholder="">
+              </div>
+            </form>
+          </div>
+          <div class="col-md-6" id="sem4">
+            <p class="ml-5 text-center text-dark font-weight-bold">4th SEM GPA</p>
+          </div>
+          <div class="col-md-3" id="getsem4">
+            <form action="">
+              <div class="">
+                <input type="" class=" form-control form-control-sm" value="" id="sem44" placeholder="">
+              </div>
+            </form>
+          </div>
+          <div class="col-md-6" id="sem5">
+            <p class="ml-5 text-center text-dark font-weight-bold">5th SEM GPA</p>
+          </div>
+          <div class="col-md-3" id="getsem5">
+            <form action="">
+              <div class="">
+                <input type="" class="form-control form-control-sm" value="" id="sem55" placeholder="">
+              </div>
+            </form>
+          </div>
+          <div class="col-md-6" id="sem6">
+            <p class="ml-5 text-center text-dark font-weight-bold">6th SEM GPA </p>
+          </div>
+          <div class="col-md-3" id="getsem6">
+            <form action="">
+              <div class="">
+                <input type="" class=" form-control form-control-sm" value="" id="sem66" placeholder="">
+              </div>
+            </form>
+          </div>
+          <div class="col-md-6" id="sem7">
+            <p class="ml-5 text-center text-dark font-weight-bold">7th SEM GPA </p>
+          </div>
+          <div class="col-md-3"id="getsem7" >
+            <form action="">
+              <div class="">
+                <input type="" class=" form-control form-control-sm" value="" id="sem77" placeholder="">
+              </div>
+            </form>
+          </div>
+          <div class="col-md-6" id="sem8">
+            <p class="ml-5 text-center text-dark font-weight-bold">8th SEM GPA </p>
+          </div>
+          <div class="col-md-3" id="getsem8">
+            <form action="">
+              <div class="">
+                <input type="" class=" form-control form-control-sm mb-3"value="" id="sem88" placeholder="">
+              </div>
+            </form>
+          </div>
+          <div class="col-md-5">
+
+          </div>
+          <div class="col-md-5">
+            <button type="button" class="btn btn-dark mt-2 " onclick="calc()">CALCULATE THE CGPA</button>
+
+          </div>
+          <div class="col-md-6">
+            <p class="ml-5 text-center text-dark font-weight-bold mt-3" >TOTAL CGPA </p>
+          </div>
+          <div class="col-md-3">
+            <form action="">
+              <div class="">
+                <input type="" class="mt-3 form-control form-control-sm mb-3" id="ans" placeholder="">
+              </div>
+            </form>
+          </div>
+          <div class="col-md-3">
+            <form action="">
+                <div class="">
+                 
+                  <br>
+                  
+               
+                </div>
+                
+              </form>
+      </div>
+      <div class="col-lg-6">
+        <img src="./image/student.jpeg" alt="">
+     </div>
+ </div>
+ </div>
+ 
+  </div>
+  <br>
+  <br>
+  <br>
+  
+   
+
+     
+      
+        
+   
+
+
+    
+       
+    <script>
+      var o= window.onload=function()
+      {
+        document.getElementById("sem1").style.display = "none";
+        document.getElementById("getsem1").style.display = "none";
+        document.getElementById("sem2").style.display = "none";
+        document.getElementById("getsem2").style.display = "none";
+        document.getElementById("sem3").style.display = "none";
+        document.getElementById("getsem3").style.display = "none";
+        document.getElementById("sem4").style.display = "none";
+        document.getElementById("getsem4").style.display = "none";
+        document.getElementById("sem5").style.display = "none";
+        document.getElementById("getsem5").style.display = "none";
+        document.getElementById("sem6").style.display = "none";
+        document.getElementById("getsem6").style.display = "none";
+        document.getElementById("sem7").style.display = "none";
+        document.getElementById("getsem7").style.display = "none";
+        document.getElementById("sem8").style.display = "none";
+        document.getElementById("getsem8").style.display = "none";
+        
+      }
+      function sem()
+      {
+        o();
+        var t=document.getElementById("course").selectedIndex;
+       if(t==1){
+        document.getElementById("sem1").style.display = "inline";
+        document.getElementById("getsem1").style.display = "inline";
+       }
+       else if(t==2){
+        document.getElementById("sem1").style.display = "inline";
+        document.getElementById("getsem1").style.display = "inline";
+        document.getElementById("sem2").style.display = "inline";
+        document.getElementById("getsem2").style.display = "inline";
+       }
+       else if(t==3){
+        document.getElementById("sem1").style.display = "inline";
+        document.getElementById("getsem1").style.display = "inline";
+        document.getElementById("sem2").style.display = "inline";
+        document.getElementById("getsem2").style.display = "inline";
+        document.getElementById("sem3").style.display = "inline";
+        document.getElementById("getsem3").style.display = "inline";
+       }
+       else if(t==4){
+        document.getElementById("sem1").style.display = "inline";
+        document.getElementById("getsem1").style.display = "inline";
+        document.getElementById("sem2").style.display = "inline";
+        document.getElementById("getsem2").style.display = "inline";
+        document.getElementById("sem3").style.display = "inline";
+        document.getElementById("getsem3").style.display = "inline";
+        document.getElementById("sem4").style.display = "inline";
+        document.getElementById("getsem4").style.display = "inline";
+       }
+       else if(t==5){
+        document.getElementById("sem1").style.display = "inline";
+        document.getElementById("getsem1").style.display = "inline";
+        document.getElementById("sem2").style.display = "inline";
+        document.getElementById("getsem2").style.display = "inline";
+        document.getElementById("sem3").style.display = "inline";
+        document.getElementById("getsem3").style.display = "inline";
+        document.getElementById("sem4").style.display = "inline";
+        document.getElementById("getsem4").style.display = "inline";
+        document.getElementById("sem5").style.display = "inline";
+        document.getElementById("getsem5").style.display = "inline";
+
+       }
+       else if(t==6){
+        document.getElementById("sem1").style.display = "inline";
+        document.getElementById("getsem1").style.display = "inline";
+        document.getElementById("sem2").style.display = "inline";
+        document.getElementById("getsem2").style.display = "inline";
+        document.getElementById("sem3").style.display = "inline";
+        document.getElementById("getsem3").style.display = "inline";
+        document.getElementById("sem4").style.display = "inline";
+        document.getElementById("getsem4").style.display = "inline";
+        document.getElementById("sem5").style.display = "inline";
+        document.getElementById("getsem5").style.display = "inline";
+        document.getElementById("sem6").style.display = "inline";
+        document.getElementById("getsem6").style.display = "inline";
+
+       }
+       else if(t==7){
+        document.getElementById("sem1").style.display = "inline";
+        document.getElementById("getsem1").style.display = "inline";
+        document.getElementById("sem2").style.display = "inline";
+        document.getElementById("getsem2").style.display = "inline";
+        document.getElementById("sem3").style.display = "inline";
+        document.getElementById("getsem3").style.display = "inline";
+        document.getElementById("sem4").style.display = "inline";
+        document.getElementById("getsem4").style.display = "inline";
+        document.getElementById("sem5").style.display = "inline";
+        document.getElementById("getsem5").style.display = "inline";
+        document.getElementById("sem6").style.display = "inline";
+        document.getElementById("getsem6").style.display = "inline";
+        document.getElementById("sem7").style.display = "inline";
+        document.getElementById("getsem7").style.display = "inline";
+       }
+       else if(t==8){
+        document.getElementById("sem1").style.display = "inline";
+        document.getElementById("getsem1").style.display = "inline";
+        
+        document.getElementById("sem2").style.display = "inline";
+        document.getElementById("getsem2").style.display = "inline";
+        document.getElementById("sem3").style.display = "inline";
+        document.getElementById("getsem3").style.display = "inline";
+        document.getElementById("sem4").style.display = "inline";
+        document.getElementById("getsem4").style.display = "inline";
+        document.getElementById("sem5").style.display = "inline";
+        document.getElementById("getsem5").style.display = "inline";
+        document.getElementById("sem6").style.display = "inline";
+        document.getElementById("getsem6").style.display = "inline";
+        document.getElementById("sem7").style.display = "inline";
+        document.getElementById("getsem7").style.display = "inline";
+        document.getElementById("sem8").style.display = "inline";
+        document.getElementById("getsem8").style.display = "inline";
+       }
+       
+      }
+      function calc(){
+        document.getElementById("ans").value=0;
+        var t=document.getElementById("course").selectedIndex;
+        var c=0;
+        var a=0;
+        var y1=parseInt(document.getElementById("sem11").value);
+        var y2=parseInt(document.getElementById("sem22").value);
+        var y3=parseInt(document.getElementById("sem33").value);
+        var y4=parseInt(document.getElementById("sem44").value);
+        var y5=parseInt(document.getElementById("sem55").value);
+        var y6=parseInt(document.getElementById("sem66").value);
+        var y7=parseInt(document.getElementById("sem77").value);
+        var y8=parseInt(document.getElementById("sem88").value);
+        
+        if(c<t){
+          c=c+1;
+          if((y1!=0)&& (c<t))
+          {
+            c=c+1;
+            if((y2!=0)&&(c<t)){
+              c=c+1;
+              if((y3!=0)&&(c<t)){
+                c=c+1;
+               if((y4!=0)&&(c<t)){
+                c=c+1;
+               if((y5!=0)&&(c<t)){
+                c=c+1;
+               if((y6!=0)&&(c<t)){
+                c=c+1;
+               if((y7!=0)&&(c<t)){
+                c=c+1;
+               if((y8!=0)&&(c<t)){
+              } 
+              else if((y8!=0)&& (c==t))
+              {
+                document.getElementById("ans").value=(y1+y2+y3+y4+y5+y6+y7+y8)/8;
+              }
+            else
+            {
+              window.alert("8th Semester not entered");
+            }
+                
+          } 
+          else if((y7!=0)&& (c==t))
+          {
+
+            document.getElementById("ans").value=(y1+y2+y3+y4+y5+y6+y7)/7;
+          }
+            else{
+            window.alert("7th Semester not entered");
+          }
+          }  
+              else if((y6!=0)&& (c==t)){
+            document.getElementById("ans").value=(y1+y2+y3+y4+y5+y6)/6;
+            }
+            else{
+            window.alert("6th Semester not entered");
+          }
+              } 
+              else if((y5!=0)&& (c==t)){
+            document.getElementById("ans").value=(y1+y2+y3+y4+y5)/5;
+            }
+            else{
+            window.alert("5th Semester not entered");
+          }
+              } 
+              else if((y4!=0)&& (c==t)){
+            document.getElementById("ans").value=(y1+y2+y3+y4)/4;
+            }
+            else{
+            window.alert("4th Semester not entered");
+          }
+              }  
+              else if((y3!=0)&& (c==t)){
+            document.getElementById("ans").value=(y1+y2+y3)/3;
+            }
+            else{
+            window.alert("3rd Semester not entered");
+          }
+            }
+            else if((y2!=0)&& (c==t)){
+            document.getElementById("ans").value=(y1+y2)/2;
+            }
+          else{
+            window.alert("2nd Semester not entered");
+          }
+          }
+          else if((y1!=0)&& (c==t)){
+            document.getElementById("ans").value=y1;
+          }
+          else{
+           window.alert("1st Semester not entered");
+          }
+          }
+        else{
+          // window.alert("Semester not choosen");
+        }
+      }
+     
+    </script>
+ 
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
